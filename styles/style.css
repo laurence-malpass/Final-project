@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    background-image: url("../images/astronaut_PNG19.png");
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    background-position: right bottom;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    transition: 0.5s;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+header a:hover {
+    color: rgb(212, 212, 212);
+}
+
+.headline {
+    margin: 20px;
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 350px;
+}
+
+.navlinks-div {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.black-line {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+#more_link {
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.what-i-do {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+.what-i-do-div {
+    margin-bottom: 40px;
+}
+
+.work-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.work-1 {
+    display: flex;
+    align-items: center;
+}
+
+.projects {
+    margin: 20px;
+}
+
+.projects-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project a {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.project img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding-top: 10px;
+}
+
+.projects-link {
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.projects-link a {
+    text-decoration: none;
+    color: black;
+}
+
+.carousel {
+    display: none;
+}
+
+.comprehensive {
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#contact_form_id {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+input {
+    width: auto;
+    background-color: black;
+    border: none;
+    border-bottom: 1px white solid;
+    margin: 5px 0 10px 0;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+#message {
+    width: auto;
+    background-color: black;
+    border: none;
+    border-bottom: 1px white solid;
+    margin: 5px 0 5px 0;
+    color: white;
+    height: 100px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* TABLETS */
+
+@media screen and (min-width: 480px) {
+    header {
+        background-size: 400px 400px;
+    }
+
+    .headline {
+        width: 500px;
+        font-size: 24px;
+    }
+
+    .navlinks {
+        margin-bottom: 300px;
+    }
+
+    .reason-box {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .services {
+        width: 80%;
+        margin: 20px;
+        cursor: pointer;
+    }
+
+    .comprehensive h3 {
+        margin-bottom: 60px;
+    }
+
+    .mask {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 20;
+        transition: 0.8s;
+        display: none;
+    }
+
+    .service-popup {
+        position: fixed;
+        top: 38%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        z-index: 100;
+        background-color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: -250px;
+        margin-top: -150px;
+        border-radius: 8px;
+    }
+
+  }
+
+/* DESKTOP */
+
+@media screen and (min-width: 800px) {
+    header {
+        background-size: 500px 500px;
+    }
+
+    .header-container {
+        margin: 0 0 50px 50px;
+    }
+
+    .headline {
+        font-size: 40px;
+        /* position: relative; */
+        margin-top: 350px;
+        width: 700px;
+    }
+
+    .navlinks {
+        margin-bottom: 40px;
+        flex-direction: row;
+    }
+
+    .what-i-do {
+        margin-left: 40px;
+    }
+
+    .what-i-do-div {
+        width: 60%;
+    }
+
+    .reasons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .reason-box {
+        width: 320px;
+    }
+
+    .projects {
+        margin-left: 60px;
+    }
+
+    .projects-mobile {
+        display: none;
+    }
+
+    .carousel {
+        display: block;
+        margin: 100px;
+    }
+
+    .carousel-item {
+        width: 200px;
+        height: 400px;
+    }
+
+    .comprehensive h3 {
+        margin-left: 60px;
+    }
+
+    .services-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .services {
+        width: 320px;
+        box-shadow: 3px 3px 10px #888888;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .details {
+        padding-left: 100px;
+        margin-top: -200px;
+    }
+
+
+  }
